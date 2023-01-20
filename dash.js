@@ -18,13 +18,13 @@ import {
 } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-firestore.js";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCmUZy2KYQO_UFn1VWdCfVjKbl5ov005Xw",
-  authDomain: "attendance-app-7477.firebaseapp.com",
-  projectId: "attendance-app-7477",
-  storageBucket: "attendance-app-7477.appspot.com",
-  messagingSenderId: "157105142963",
-  appId: "1:157105142963:web:7ea435d8784d518cdc84c6",
-  measurementId: "G-XFLHSGPV2M",
+  apiKey: "AIzaSyDs7sUw9F5NyNcQ23a9BURY29ZLQLGS2aE",
+  authDomain: "builder-forms.firebaseapp.com",
+  projectId: "builder-forms",
+  storageBucket: "builder-forms.appspot.com",
+  messagingSenderId: "121662799741",
+  appId: "1:121662799741:web:38685f87ebb62e60c2d614",
+  measurementId: "G-98X994468S",
 };
 
 // Initialize Firebase

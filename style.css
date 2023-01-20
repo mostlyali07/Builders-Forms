@@ -58,7 +58,7 @@ p{
 }
 
 .btn {
-    background-color: #fdc886 !important;
+    background-color: #fea75e !important;
     color: white !important;
     color: #0e0e0e !important;
 }
@@ -66,7 +66,7 @@ p{
 .r-demo {
     font-size: 16px;
     font-weight: 600;
-    background-color: #fdc886;
+    background-color: #fea75e;
     color: #0e0e0e;
     border: 0px none;
     border-radius: 9px;
@@ -95,8 +95,8 @@ p{
 .d-demo {
     font-size: 16px;
     font-weight: 500;
-    background-color: #fdc886;
-    border: 1px solid #fdc886;
+    background-color: #fea75e;
+    border: 1px solid #fea75e;
     color: #0e0e0e;
     border-radius: 9px;
     padding: 8px 16px;
