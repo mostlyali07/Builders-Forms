@@ -57,61 +57,46 @@
       <div class="row">
         <div class="col-md-3 sec_panel mt-2 py-2">
           <ul>
-            <li class="my_list mt-4 p-2">
-              <i class="fa-solid fa-house-laptop"></i>Dashboard
-            </li>
             <li class="my_list mt-3 p-2" onclick="maiin_Doc()">
-              <i class="fa-solid fa-folder-plus"></i>Add Class
+              <i class="fa-solid fa-folder-plus"></i>Property Details
             </li>
             <li class="my_list mt-3 p-2" onclick="main_Doc()">
-              <i class="fa-solid fa-user-plus"></i>Add Student
+              <i class="fa-solid fa-user"></i>Personal Information
             </li>
             <li class="my_list mt-3 p-2" onclick="maiiin_Doc()">
-              <i class="fa-solid fa-user-tag"></i>Class Details
+              <i class="fa-solid fa-user-tag"></i>Nominee Information
             </li>
             <li class="my_list mt-3 p-2">
-              <i class="fa-solid fa-users-line"></i>Student Details
-            </li>
-            <li class="my_list mt-3 p-2">
-              <i class="fa-regular fa-credit-card"></i>Attendance
+              <i class="fa-solid fa-building-columns"></i>Bank Details
             </li>
           </ul>
         </div>
         <div class="col-md-1"></div>
         <div class="col-md-8 third_panel mt-2">
-          <form id="class_create" style="display: none">
+          <form id="class_create" style="display: block">
             <div class="form-group">
-              <label for="exampleFormControlSelect1">Teachers:</label>
+              <label for="exampleFormControlSelect1"><b>Plot size :</b></label>
               <select class="form-control medium" id="teachers">
-                <option>Sir Ghous</option>
-                <option>Sir Inzamam</option>
-                <option>Sir Kashif</option>
-                <option>Sir Haider</option>
-                <option>Sir Zunaib</option>
+                <option>100,125 and 150 sq</option>
+                <option>200, 250 and 300 sq</option>
+                <option>400 and 500 sq</option>
               </select>
             </div>
-            <label>Enter Class Timing:</label><br />
-            <input
-              type="radio"
-              id="class_timing"
-              name="class_timing"
-              value="9am To 11am"
-            />
-            <label for="class_timing">9am To 11am</label>
+            <label><b>Plot Type :</b></label><br />
             <input
               type="radio"
               id="class_timing"
               name="class_timing"
               value="12pm To 2pm"
             />
-            <label for="class_timing">12pm To 2pm</label>
+            <label for="class_timing">Commercial</label>
             <input
               type="radio"
               id="class_timing"
               name="class_timing"
               value="4pm To 6pm"
             />
-            <label for="class_timing">4pm To 6pm</label><br /><br />
+            <label for="class_timing">Residential</label><br />
             <label>Enter Class Schedule:</label><br />
             <input
               type="radio"
