@@ -73,10 +73,10 @@
         </div>
         <div class="col-md-1"></div>
         <div class="col-md-8 third_panel mt-2 p-5">
-          <form id="class_create" style="display: none">
+          <form id="class_create" style="display: block">
             <div class="form-group">
               <label for="exampleFormControlSelect1"><b>Plot size :</b></label>
-              <select class="form-control medium" id="teachers">
+              <select class="form-control medium" id="PlotSize">
                 <option>100,125 and 150 sq</option>
                 <option>200, 250 and 300 sq</option>
                 <option>400 and 500 sq</option>
@@ -85,19 +85,19 @@
             <label><b>Plot Type :</b></label><br />
             <input
               type="radio"
-              id="class_timing"
-              name="class_timing"
-              value="12pm To 2pm"
+              id="PlotType"
+              name="PlotType"
+              value="Commercial"
               />
-              <label for="class_timing">Commercial</label>
+              <label for="PlotType">Commercial</label>
               <input
               type="radio"
-              id="class_timing"
-              name="class_timing"
-              value="4pm To 6pm"
+              id="PlotType"
+              name="PlotType"
+              value="Residential"
               />
-              <label for="class_timing">Residential</label><br />
-              <button class="e-demo" id="create_stu">Submit</button>
+              <label for="PlotType">Residential</label><br />
+              <button class="e-demo" id="submitProp">Submit</button>
               <!-- <br /><label>Enter Class Schedule:</label><br />
             <input
               type="radio"
@@ -146,7 +146,7 @@
             <!-- <button class="f-demo" id="create_edit">Edit</button> -->
             <!-- <button class="g-demo" id="create_del">Delete</button> -->
           </form>
-          <form id="form_Student" style="display: block">
+          <form id="form_Student" style="display: none">
             <div class="form-floating mb-3">
               <input
                 type="name"
@@ -167,7 +167,7 @@
             </div>
             <div class="form-floating mb-3">
               <input
-                type="text"
+                type="number"
                 class="form-control medium"
                 id="roll_no"
                 placeholder="roll_no.com"
@@ -199,7 +199,7 @@
                 id="cnic"
                 placeholder="cnic.com"
               />
-              <label for="floatingInput">CNIC Number</label>
+              <label for="floatingInput">Mobile Number</label>
             </div>
             <br />
             <div class="custom-file medium">
@@ -246,6 +246,7 @@
       crossorigin="anonymous"
     ></script>
     <script type="module" src="dash.js"></script>
+    <script type="module" src="crud.js"></script>
     <script type="text/javascript">
       function maiiin_Doc() {
         document.getElementById("class_create").style.display = "none";
