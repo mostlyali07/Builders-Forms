@@ -72,8 +72,8 @@
           </ul>
         </div>
         <div class="col-md-1"></div>
-        <div class="col-md-8 third_panel mt-2">
-          <form id="class_create" style="display: block">
+        <div class="col-md-8 third_panel mt-2 p-5">
+          <form id="class_create" style="display: none">
             <div class="form-group">
               <label for="exampleFormControlSelect1"><b>Plot size :</b></label>
               <select class="form-control medium" id="teachers">
@@ -88,16 +88,17 @@
               id="class_timing"
               name="class_timing"
               value="12pm To 2pm"
-            />
-            <label for="class_timing">Commercial</label>
-            <input
+              />
+              <label for="class_timing">Commercial</label>
+              <input
               type="radio"
               id="class_timing"
               name="class_timing"
               value="4pm To 6pm"
-            />
-            <label for="class_timing">Residential</label><br />
-            <label>Enter Class Schedule:</label><br />
+              />
+              <label for="class_timing">Residential</label><br />
+              <button class="e-demo" id="create_stu">Submit</button>
+              <!-- <br /><label>Enter Class Schedule:</label><br />
             <input
               type="radio"
               id="classes_schedule"
@@ -141,12 +142,11 @@
                 <option>Batch No: 8</option>
               </select>
             </div>
-            <br />
-            <button class="e-demo" id="create_stu">Submit</button>
+            <br /> -->
             <!-- <button class="f-demo" id="create_edit">Edit</button> -->
             <!-- <button class="g-demo" id="create_del">Delete</button> -->
           </form>
-          <form id="form_Student" style="display: none">
+          <form id="form_Student" style="display: block">
             <div class="form-floating mb-3">
               <input
                 type="name"
@@ -172,16 +172,25 @@
                 id="roll_no"
                 placeholder="roll_no.com"
               />
-              <label for="floatingInput">Roll Number</label>
+              <label for="floatingInput">CNIC/passport no</label>
             </div>
             <div class="form-floating mb-3">
               <input
-                type="number"
+                type="email"
                 class="form-control medium"
                 id="cont_no"
                 placeholder="cont_no.com"
               />
-              <label for="floatingInput">Contact Number</label>
+              <label for="floatingInput">Mailing address</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="text"
+                class="form-control medium"
+                id="cont_no"
+                placeholder="cont_no.com"
+              />
+              <label for="floatingInput">Permanent address</label>
             </div>
             <div class="form-floating mb-3">
               <input
@@ -199,15 +208,7 @@
                 >Choose file</label
               >
             </div>
-            <br /><br />
-            <div class="form-group">
-              <label for="exampleFormControlSelect1">Courses:</label>
-              <select class="form-control medium" id="stu_courses">
-                <option>Graphic Designing</option>
-                <option>Web and Mobile Hybrid Applications</option>
-                <option>Artificial Intelligence</option>
-              </select>
-            </div>
+            <br />
             <br />
             <button class="e-demo" id="create_student">Submit</button>
             <!-- <button class="f-demo" id="create_edit">Edit</button> -->
